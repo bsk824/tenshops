@@ -8,7 +8,7 @@ a {color:#666;text-decoration:none;}
 li {list-style:none;}
 table {width:100%;border-collapse:collapse;border:0;}
 colgroup {background:none;}
-input, select, textarea, button {vertical-align:0;font:14px/1.5 'Nanum Gothic', Sans-serif;}
+input, select, textarea, button {font:14px/1.5 'Nanum Gothic', Sans-serif;}
 fieldset, img {border:0;}
 img {vertical-align:top;}
 label, td img {vertical-align:middle;}
