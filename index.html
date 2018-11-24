@@ -6,7 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="/resource/font/style.css">
-	<link rel="stylesheet" type="text/css" href="/resource/css/default.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/style.css">
 	<script type="text/javascript" src="/resource/js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="/resource/js/ui.js"></script>
 	<!--[if lt IE 9]>
@@ -16,29 +17,40 @@
 <body>
 
 	<div id="wrap">
+
 		<header id="header">
 			<h1 class="logo"><a href="#">텐샵스</a></h1>
-			<button type="button" class="btnMenu">메뉴</button>
-			<a href="#" class="btn">?</a>
-			<a href="#" class="btnSearch">검색</a>
-			
-			<section class="userWrap">
-				<div class="userTop">
-					<h2 class="userNick">Hello stranger</h2>
-					<a href="#" class="linkAlert">알림</a>
-					<p>
-						<a href="#" class="linkScrape">마이스크랩</a>
-						<a href="#" class="linkReview">마이리뷰</a>
-					</p>
-				</div>
-				<p class="userLogin">
-					책! 이제 어려워하지 않아도 되어요.
-					텐샵스 큐레이터님들이 책읽기를 도와드리겠습니다.
-					<a href="#">로그인</a>
+			<button type="button" class="btnMenu" onclick="menuOpen(this);">메뉴</button>
+			<nav class="nav">
+				<a href="#" class="btnOrder">주문</a>
+				<a href="#" class="btnSearch">검색</a>
+			</nav>
+		</header>
+
+		<!-- -->
+		<section class="userWrap">
+			<div class="userTop">
+				<a href="#" class="linkAlert">알림</a>
+				<p class="userPic"><img src="/resource/images/img_user_default.png" alt=""></p>
+				<p class="userNick">
+					Hello stranger
+					<a href="#" class="edit">Edit</a>
 				</p>
-				<p class="userJoin">
-					책! 이제 어려워하지 않아도 되어요.<br>텐샵스 큐레이터님들이 책읽기를 도와드리겠습니다.
-					<a href="#">멤버십 가입</a>
+				<p class="myLink">
+					<a href="#" class="linkScrap">마이스크랩</a>
+					<a href="#" class="linkReview">마이리뷰</a>
+				</p>
+				<!-- <p class="userLogin">
+					책! 이제 어려워하지 않아도 되어요.<br>
+					텐샵스 큐레이터님들이 책읽기를 도와드리겠습니다.<br>
+					<a href="#" class="btnType1">로그인</a>
+				</p> -->
+			</div>
+			<div class="userCont">
+				<p class="userMembershipJoin">
+					책! 이제 어려워하지 않아도 되어요.<br>
+					텐샵스 큐레이터님들이 책읽기를 도와드리겠습니다.<br>
+					<a href="#" class="btnType1">멤버십 가입</a>
 				</p>
 				<section class="userNav">
 					<h3 class="tit">마이 멤버십</h3>
@@ -54,57 +66,174 @@
 					</ul>
 				</section>
 
-				<div class="text">
-					<p>텍스트가 들어갑니다.<br>텍스트가 들어갑니다. 텍스트가 들어갑니다.</p>
+				<div class="userLink">
+					<span>
+						<a href="#">멤버십 소개</a>
+					</span>
+					<span>
+						<a href="#">북클럽 전체 일정</a>
+					</span>
 				</div>
 
 				<div class="userBtm">
-					<div class="link">
-						<a href="#">멤버십 소개</a>
-						<a href="#">북클럽 전체 일정</a>
+					<div class="txtWrap">
+						<p>텍스트가 들어갑니다. 텍스트가 들어갑니다. 텍스트가 들어갑니다.</p>
 					</div>
+
+					<div class="userLink">
+						<span>
+							<a href="#">멤버십 소개</a>
+						</span>
+						<span>
+							<a href="#">북클럽 전체 일정</a>
+						</span>
+					</div>
+
+					<div class="userLink link1">
+						<span>
+							<a href="#">멤버십 소개</a>
+						</span>
+					</div>
+
 					<div class="recom">
-						<p>친구에게 책을 선물해 보세요</p>
+						<p><a href="#">친구에게 책을 선물해 보세요</a></p>
 					</div>
 					<div class="login">
-						<a href="#">계정관리</a>
-						<a href="#">로그아웃</a>
+						<a href="#" class="linkSet">계정관리</a>
+						<a href="#" class="linkOut">로그아웃</a>
 					</div>
 					<div class="logout">
-						<p>텐샵스 회원이 아니신가요? <a href="#">회원가입</a></p>
-						<p>비밀번호를 잊으셨나요? <a href="#">비밀번호 재설정</a></p>
+						<p>텐샵스 회원이 아니신가요? <a href="#" class="btnType1">회원가입</a></p>
+						<p>비밀번호를 잊으셨나요? <a href="#" class="btnType1">비밀번호 재설정</a></p>
 					</div>
 				</div>
-			</section>
-		</header>
+			</div>
+		</section>
+		<!-- -->
 
 		<div id="container">
-			<section class="todayPick">
-				<h2>Today’s pick</h2>
-				<p>고양이들은 살아 있는 것 중 가장 깨끗하고, 가장 현명하고, 가장 똑똑하며 내가 사랑하는 것들이다.</p>
-				<p>미국 현대 문학의 아버지 <span>Mark Twain</span></p>
+			<section class="todayPick" style="background:url(/resource/images/img_sample.jpg) no-repeat 50% 50%;">
+				<div class="inner">
+					<h2 class="tit">Today’s pick</h2>
+					<p class="txt">고양이들은 살아 있는 것 중 가장 깨끗하고, 가장 현명하고, 가장 똑똑하며 내가 사랑하는 것들이다.</p>
+					<p class="name">미국 현대 문학의 아버지 <strong>Mark Twain</strong></p>
+				</div>
 			</section>
 
-			<figure class="bookInfo">
-				<span><img src="" alt=""></span>
+			<figure class="section bookInfo">
+				<span class="img"><img src="/resource/images/img_sample2.jpg" alt=""></span>
 				<figcaption>
-					<span>큐레이터의 한줄평이 표시됩니다. 최대 3줄까지 표시됩니다. 큐레이터의 한줄평이 표시됩니다. 최대 3줄까지 표시됩니다.</span>
-					<span>리뷰 요약 설명이 들어갑니다. 최대 3줄까지 표시됩니다. 리뷰 요약 설명이 들어갑니다. 최대 3줄까지 표시됩니다. 리뷰 요약 설명이 들어갑니다. 최대 3줄까지 표시됩니다. </span>
-					<span>Curated by mimi</span>
-					<button type="button">VIEW MORE</button>
+					<span class="tit">큐레이터의 한줄평이 표시됩니다. 최대 3줄까지 표시됩니다. 큐레이터의 한줄평이 표시됩니다. 최대 3줄까지 표시됩니다.큐레이터의 한줄평이 표시됩니다. 최대 3줄까지 표시됩니다. 큐레이터의 한줄평이 표시됩니다.</span>
+					<span class="txt">리뷰 요약 설명이 들어갑니다. 최대 3줄까지 표시됩니다. 리뷰 요약 설명이 들어갑니다. 최대 3줄까지 표시됩니다. 리뷰 요약 설명이 들어갑니다. </span>
+					<span class="name">Curated by mimi</span>
+					<button type="button" class="btnType2">VIEW MORE</button>
 				</figcaption>
 			</figure>
 
-			<div class="bookImgs">
-				<div class="item1"></div>
-				<div class="item2"></div>
-				<div class="item3"></div>
-				<div class="item4"></div>
-				<div class="item5"></div>
-				<div class="item6"></div>
-				<div class="item7"></div>
-				<div class="item8"></div>
+			<div class="section bookImgs">
+				<div class="item1" style="background:url(/resource/images/img_sample.jpg) no-repeat;">
+				</div>
+				<div class="item2" style="background:url(/resource/images/img_sample.jpg) no-repeat;">
+					<span class="sticker">INSIGHT</span>
+					<span class="name">범기영</span>
+					<span class="txt">누군가의 시각에 균열을 줄만한<br> 다양성을 더하는 이야기를<br> 담은 책을 고릅니다.</span>
+				</div>
+				<div class="item3" style="background:url(/resource/images/img_sample.jpg) no-repeat;">
+				</div>
+				<div class="item4" style="background:url(/resource/images/img_sample.jpg) no-repeat;">
+				</div>
+				<div class="item5" style="background:url(/resource/images/img_sample.jpg) no-repeat;">
+					<span class="sticker">STORY</span>
+				</div>
+				<div class="item6" style="background:url(/resource/images/img_sample.jpg) no-repeat;">
+				</div>
+				<div class="item7" style="background:url(/resource/images/img_sample.jpg) no-repeat;">
+				</div>
+				<div class="item8" style="background:url(/resource/images/img_sample.jpg) no-repeat;">
+				</div>
 			</div>
+
+			<section class="section bookClub">
+				<h3 class="tit">이달의 북클럽 2018년 11월</h3>
+				<ul>
+					<li>
+						<a href="#">
+							<span class="img"><img src="/resource/images/img_sample3.jpg" alt=""></span>
+							<span>
+								<span class="thumb"><img src="/resource/images//img_user_default.png" alt=""></span>
+								<span class="name">Curated by mimi</span>
+							</span>
+							<span class="txt">
+								이달의 북클럽 최대 2줄까지 가능합니다.
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="sticker">NOW</span>
+							<span class="img"><img src="/resource/images/img_sample3.jpg" alt=""></span>
+							<span>
+								<span class="thumb"><img src="/resource/images//img_user_default.png" alt=""></span>
+								<span class="name">Curated by mimi</span>
+							</span>
+							<span class="txt">
+								이달의 북클럽 최대 2줄까지 가능합니다.
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="sticker">NOW</span>
+							<span class="img"><img src="/resource/images/img_sample3.jpg" alt=""></span>
+							<span>
+								<span class="thumb"><img src="/resource/images//img_user_default.png" alt=""></span>
+								<span class="name">Curated by mimi</span>
+							</span>
+							<span class="txt">
+								이달의 북클럽 최대 2줄까지 가능합니다.
+							</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<div>
+				<ul>
+					<li>
+						<a href="#">
+							<span>
+								<span>Event</span>
+								<span>Now</span>
+							</span>
+							<p>이벤트 제목을 입력하세요.</p>
+							<span>11월 11일 ~ 12월 31일</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>
+								<span>Event</span>
+								<span>Now</span>
+							</span>
+							<p>이벤트 제목을 입력하세요.</p>
+							<span>11월 11일 ~ 12월 31일</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<section>
+				<h3 class="tit">큐레이터 소개</h3>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="" alt="">
+							<span>Mimi</span>
+							<span>현 씨네21 기자,<br> 북칼럼리스트</span>
+						</a>
+					</li>
+				</ul>
+			</section>
 
 		</div>
 

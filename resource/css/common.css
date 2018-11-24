@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+/* default */
+* {margin:0;padding:0;}
+html {height:100%;font-size:62.5%;}
+body {height:100%;color:#000;font:14px/1.5 'Nanum Gothic';-webkit-text-size-adjust:none;word-break:keep-all;}
+h1, h2, h3, h4, h5 {font-weight:normal;}
+a {color:#000;text-decoration:none;}
+li {list-style:none;}
+table {width:100%;border-collapse:collapse;border:0;}
+colgroup {background:none;}
+input, select, textarea, button {font:14px/1.5 'Nanum Gothic';}
+fieldset, img {border:0;}
+img {vertical-align:top;}
+label, td img {vertical-align:middle;}
+legend, caption, .hidden {position:absolute;z-index:-1;font:0/0 a;}
+address, em {font-style:normal;}
+strong, b {font-weight:bold;}
+button {overflow:visible;cursor:pointer;background:none;border:0;border-radius:0;letter-spacing:-1px;}
+button::-moz-focus-inner {padding:0;border:0;}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section {display:block;}
+
+.btnType1 {
+	display: inline-block;
+	padding: 4px 10px;
+	background: #563993;
+	color: #fff;
+	line-height: 1;
+}
+.btnType2 {
+	display: inline-block;
+	padding: 4px 10px;
+	background: #000;
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0, .15);
+	color: #fff;
+	line-height: 1;
+}
+/* layout */
+#wrap {padding: 88px 0 150px;}
+#header {
+	position: fixed;
+	top: 0; right: 0; left: 0;
+	z-index: 10;
+	height: 88px;
+	background: #fff;
+	transition: all .3s;
+}
+.scroll #header {
+	background: rgba(255,255,255, .7)
+}
+#header .logo {
+	position: absolute;
+	top: 33px; left: 125px; 
+	width: 167px; height: 22px;
+	background: url(/resource/images/img_logo.png) no-repeat;
+	font: 0/0 a;
+}
+#header .btnMenu {
+	position: absolute;
+	top: 33px; left: 69px;
+	width: 25px; height: 23px;
+	background: url(/resource/images/btn_menu.png) no-repeat;
+	font: 0/0 a;
+}
+#header .nav {
+	position: absolute;
+	top: 30px; right: 65px;
+	font: 0/0 a;
+}
+#header .nav a {
+	display: inline-block;
+	width: 30px; height: 30px;
+	margin-left: 24px;
+	font: 0/0 a;
+}
+#header .btnOrder {
+	background: url(/resource/images/icon_order.png) no-repeat;
+}
+#header .btnSearch {
+	background: url(/resource/images/icon_search.png) no-repeat;
+}
+
+.menuOn:after {
+	content: "";
+	position: fixed;
+	top: 0; right: 0; bottom: 0; left: 0;
+	z-index: 10;
+	background: rgba(0,0,0,.7);
+	transition: all 1s;
+}
+.userWrap {
+	position: fixed;
+	top: 0; bottom: 0; left: -400px;
+	width: 400px;
+	background: #fff;
+	z-index: 100;
+	transition: left .3s;
+}
+.menuOn .userWrap {
+	left: 0;
+}
+.userWrap .userTop {
+	height: 415px;
+	background: #000 url(/resource/images/img_logo2.png) no-repeat 50% 54px;
+	border-top: 1px solid #000;
+	box-shadow: 0 3px 3px 0 rgba(0,0,0,.3);
+	color: #fff;
+	text-align: center;
+}
+.userWrap .userLogin {
+	margin-top: 180px;
+}
+.userWrap .userLogin .btnType1 {
+	margin: 35px 0 0;
+	padding: 10px 35px;
+	font-size: 16px;
+	border-radius: 20px;
+}
+.userWrap .linkAlert {
+	position: absolute;
+	top: 24px; right: 32px;
+	width: 16px; height: 16px;
+	background: url(/resource/images/icon_alert.png) no-repeat;
+	font: 0/0 a;
+}
+.userWrap .userPic {
+	overflow: hidden;
+	width: 91px; height: 91px;
+	margin: 130px auto 0;
+}
+.userWrap .userNick {
+	margin: 15px 0 0;
+	font-size: 24px;
+}
+.userWrap .userNick .edit {
+	display: block;
+	width: 41px; line-height: 21px;
+	margin: 15px auto 0;
+	color: #fff;
+	font-size: 11px;
+	border: 1px solid #fff;
+	border-radius: 12px;
+}
+.userWrap .myLink {
+	width: 250px;
+	margin: 35px auto 0;
+	padding: 20px 0 0;
+	border-top: 1px solid #707070;
+}
+.userWrap .myLink a {
+	display: inline-block;
+	padding-left: 25px;
+	color: #fff;
+	font-size: 9px;
+	line-height: 16px;
+}
+.userWrap .myLink a ~ a {
+	margin-left: 110px;
+}
+.userWrap .myLink .linkScrap {
+	background: url(/resource/images/icon_scrap.png) no-repeat 0 50%;
+}
+.userWrap .myLink .linkReview {
+	background: url(/resource/images/icon_review.png) no-repeat 0 50%;
+}
+.userWrap .userCont {
+	position: absolute;
+	top: 415px; right: 0; bottom: 0; left: 0;
+	overflow: auto;
+}
+.userWrap .userMembershipJoin {
+	padding: 90px 0 60px;
+	text-align: center;
+}
+.userWrap .userMembershipJoin .btnType1 {
+	margin: 15px 0 0;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 20px;
+}
+.userWrap .userNav {
+	width: 250px;
+	margin: 40px auto 110px;
+	text-align: center;
+}
+.userWrap .userNav .tit {
+	padding: 0 0 15px;
+	color: #563993;
+	border-bottom: 1px solid #707070;
+	font-size: 16px;
+}
+.userWrap .userNav .tit ~ .tit {
+	margin-top: 85px;
+}
+.userWrap .userNav .list li {
+	margin-top: 15px;
+	color: #000;
+	font-size: 16px;
+}
+.userWrap .userLink {
+	padding: 90px 0;
+	color: #000;
+	text-align: center;
+}
+.userWrap .userLink.link1 {
+	padding: 20px 0;
+}
+.userWrap .userLink span {
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+}
+.userWrap .userLink span ~ span {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #707070;
+}
+.userWrap .userBtm {
+	background: #E6E6E6;
+}
+.userWrap .userBtm .txtWrap {
+	padding: 110px 75px;
+	color: #563993;
+	text-align: center;
+}
+
+.userWrap .userBtm .link span {display: block;}
+.userWrap .userBtm .recom {
+	padding: 12px 0;
+	background: #000;
+	box-shadow: 0 3px 3px 0 rgba(0,0,0,.3);
+	color: #fff;
+	text-align: center;
+}
+.userWrap .userBtm .recom a {
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+}
+.userWrap .userBtm .recom a:before {
+	content: "";
+	display: inline-block;
+	width: 16px; height: 15px;
+	margin: 0 15px 0 0;
+	background: url(/resource/images/icon_heart.png) no-repeat;
+	vertical-align: middle;
+}
+.userWrap .userBtm .login {
+	position: relative;
+	height: 70px;
+}
+.userWrap .userBtm .login a {
+	position: absolute;
+	top: 25px;
+	line-height: 16px;
+	font-size: 10px;
+}
+.userWrap .userBtm .login a:before {
+	content: "";
+	display: inline-block;
+	margin-right: 9px;
+	vertical-align: middle;
+}
+.userWrap .userBtm .login .linkSet {left: 25px;}
+.userWrap .userBtm .login .linkSet:before {
+	width: 17px; height: 16px;
+	background: url(/resource/images/icon_set.png) no-repeat;
+}
+.userWrap .userBtm .login .linkOut {right: 25px;}
+.userWrap .userBtm .login .linkOut:before {
+	width: 14px; height: 16px;
+	background: url(/resource/images/icon_logout.png) no-repeat;
+}
+.userWrap .userBtm .logout {
+	padding: 25px 0 25px 25px;
+	background: #000;
+}
+.userWrap .userBtm .logout p {
+	color: #fff;
+	font-size: 16px;
+}
+.userWrap .userBtm .logout p ~ p {
+	margin: 12px 0 0;
+}
+.userWrap .userBtm .logout a {
+	margin-left: 70px;
+	border-radius: 12px;
+	font-size: 12px;
+}
+/* //layout */
+
+.section {
+	width: 1460px;
+	margin: 0 auto;
+}
+.section:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
