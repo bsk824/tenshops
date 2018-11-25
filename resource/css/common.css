@@ -4,7 +4,6 @@
 * {margin:0;padding:0;}
 html {height:100%;font-size:62.5%;}
 body {height:100%;color:#000;font:14px/1.5 'Nanum Gothic';-webkit-text-size-adjust:none;word-break:keep-all;}
-h1, h2, h3, h4, h5 {font-weight:normal;}
 a {color:#000;text-decoration:none;}
 li {list-style:none;}
 table {width:100%;border-collapse:collapse;border:0;}
@@ -15,29 +14,28 @@ img {vertical-align:top;}
 label, td img {vertical-align:middle;}
 legend, caption, .hidden {position:absolute;z-index:-1;font:0/0 a;}
 address, em {font-style:normal;}
-strong, b {font-weight:bold;}
 button {overflow:visible;cursor:pointer;background:none;border:0;border-radius:0;letter-spacing:-1px;}
 button::-moz-focus-inner {padding:0;border:0;}
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section {display:block;}
+.swiper-wrapper {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.swiper-wrapper .swiper-slide {flex-shrink: 0;}
 
-.btnType1 {
-	display: inline-block;
-	padding: 4px 10px;
-	background: #563993;
-	color: #fff;
-	line-height: 1;
-}
-.btnType2 {
-	display: inline-block;
-	padding: 4px 10px;
-	background: #000;
-	box-shadow: 2px 2px 5px 2px rgba(0,0,0, .15);
-	color: #fff;
-	line-height: 1;
-}
 /* layout */
-#wrap {padding: 88px 0 0;}
+.bgLayout {
+	background: #E6E6E6;
+}
+#wrap {
+	min-width: 1600px;
+	padding: 88px 0 0;
+}
+.bgLayout #wrap {padding-bottom: 100px;}
 #header {
+	min-width: 1600px;
 	position: fixed;
 	top: 0; right: 0; left: 0;
 	z-index: 10;
@@ -321,6 +319,17 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 #footer .info p {
 	margin-top: 5px;
 }
+.btnTop {
+	display: none;
+	position: fixed;
+	top: 50%; right: 150px;
+	width: 48px; height: 48px;
+	background: url(/resource/images/btn_top.png) no-repeat;
+	font: 0/0 a;
+}
+.scroll .btnTop {
+	display: block;
+}
 /* //layout */
 
 .section {
@@ -331,6 +340,17 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	content: "";
 	display: block;
 	clear: both;
+}
+.section2 {
+	width: 770px;
+	margin: 0 auto;
+}
+
+.subTitle {
+	margin: 124px 0 100px;
+	text-align: center;
+	font-size: 28px;
+
 }
 
 .lineTit {
@@ -354,3 +374,97 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 }
 .lineTit span:before {left: -100px}
 .lineTit span:after {right: -100px}
+
+
+.btnType1 {
+	display: inline-block;
+	padding: 4px 10px;
+	background: #563993;
+	color: #fff;
+	line-height: 1;
+}
+.btnType2 {
+	display: inline-block;
+	padding: 4px 10px;
+	background: #000;
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0, .15);
+	color: #fff;
+	line-height: 1;
+}
+.btnType3 {
+	display: inline-block;
+	padding: 8px 15px;
+	background: #9597A6;
+	color: #fff;
+	line-height: 1;
+	border-radius: 15px;
+	font-size: 18px;
+}
+
+.tabMenu {
+	position: relative;
+	margin: 0 0 80px;
+}
+.tabMenu .list:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.tabMenu li {
+	float: left;
+	margin-right: 15px;
+}
+.tabMenu li a {
+	display: inline-block;
+	padding: 4px 15px 2px;
+	font-size: 20px;
+	border-radius: 40px;
+}
+.tabMenu li.active a {
+	background: #000;
+	color: #fff;
+}
+.tabMenu .rightBtn {
+	position: absolute;
+	top:0; right:0;
+}
+.tabMenu .rightBtn .btnType3 {
+	padding: 8px 20px 5px;
+	font-size: 16px;
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0, .15);
+}
+
+.tabMenu2 {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #9597A6;
+}
+.tabMenu2 .list:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.tabMenu2 li {float: left;}
+.tabMenu2 li ~ li {margin-left: 35px;}
+.tabMenu2 a {
+	font-size: 20px;
+}
+.tabMenu2 a:after {
+	content: "";
+	display: inline-block;
+	width: 16px; height: 16px;
+	margin: 0 0 0 10px;
+	vertical-align: middle;
+}
+.tabMenu2 .active a {color: #563993;}
+.tabMenu2 .tabReview:after {
+	background: url(/resource/images/tab_review.png) no-repeat;
+}
+.tabMenu2 .active .tabReview:after {
+	background: url(/resource/images/tab_review_on.png) no-repeat;
+}
+.tabMenu2 .tabReply:after {
+	background: url(/resource/images/tab_reply.png) no-repeat;
+}
+.tabMenu2 .active .tabReply:after {
+	background: url(/resource/images/tab_reply_on.png) no-repeat;
+}

@@ -1,8 +1,22 @@
 function menuOpen(ele) {
-	// event.preventDefault();
 	event.stopPropagation();
 	$('body').addClass('menuOn');
 }
+
+function eventSlide() {
+	new Swiper('.eventWrap .slide', {
+		speed: 500,
+		navigation: {
+			nextEl: '.eventWrap .slideNext',
+			prevEl: '.eventWrap .slidePrev',
+		}
+	});
+}
+
+function pageTop() {
+	$('html, body').animate({scrollTop: 0}, 300);
+}
+
 
 $(function(){
 	$('body').on('click', function() {

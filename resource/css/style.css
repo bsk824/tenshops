@@ -130,6 +130,11 @@
 .bookClub .list {
 	margin-top: 100px;
 }
+.bookClub .list:after {
+	content: "";
+	display: block;
+	clear: both;
+}
 .bookClub li {float: left;}
 .bookClub li a {
 	position: relative;
@@ -189,3 +194,268 @@
 	line-height: 2;
 }
 .bookClub a:hover .txt {color: #fff;}
+
+.eventWrap {
+	margin: 100px 0 0;
+	position: relative;
+	overflow: hidden;
+}
+.eventWrap li {
+	height: 600px;
+}
+.eventWrap li a {
+	display: block;
+	padding: 0 170px;
+	height: 100%;
+	color: #fff;
+}
+.eventWrap .sticker {
+	position: absolute;
+	top: 65px; right: 140px;
+}
+.eventWrap .sticker span {
+	display: inline-block;
+	margin-left: 20px;
+	padding: 0 25px;
+	background: #fff;
+	color: #000;
+	font-size: 24px;
+	line-height: 56px;
+	border-radius: 56px;
+	font-weight: bold;
+}
+.eventWrap .sticker .now {
+	background: #000;
+	color: #fff;
+}
+.eventWrap .subject {
+	padding: 165px 0 0;
+	font-size: 44px;
+}
+.eventWrap .date {
+	display: inline-block;
+	margin: 50px 0 0;
+	padding: 8px 25px;
+	font-size: 24px;
+	border: 1px solid #fff;
+	border-radius: 40px;
+}
+
+.eventWrap .slideNav {
+	position: absolute;
+	top: 50%; right:0; left: 0;
+}
+.eventWrap .slideNav span {
+	position: absolute;
+	width: 39px; height: 74px;
+	margin-top: -37px;
+	font: 0/0 a;
+}
+.eventWrap .slideNav .slidePrev {
+	left: 70px;
+	background: url(/resource/images/btn_prev.png) no-repeat;
+}
+.eventWrap .slideNav .slideNext {
+	right: 70px;
+	background: url(/resource/images/btn_next.png) no-repeat;
+}
+.eventWrap .slideNav [class*="disabled"] {
+	display: none;
+}
+.curatorInfo {margin: 100px 0 0;}
+.curatorInfo .list {
+	width: 1500px;
+	margin: 100px auto;
+}
+.curatorInfo .list:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.curatorInfo .list li {
+	position: relative;
+	float: left;
+	width: 20%;
+	margin: 50px 0;
+	text-align: center;
+}
+.curatorInfo .list li a {
+	display: block;
+}
+.curatorInfo .list li a:hover .cont {display: block;}
+.curatorInfo .list .cont {
+	display: none;
+	position: absolute;
+	top: 50%; left: 50%;
+	width: 268px; height: 268px;
+	margin: -134px 0 0 -134px;
+	background: rgba(0,0,0,.8);
+	border-radius: 50%;
+	text-align: center;
+}
+.curatorInfo .list .name {
+	display: inline-block;
+	padding: 60px 5px 10px;
+	border-bottom: 1px solid #fff;
+	color: #FF916F;
+	font-weight: bold;
+	font-size: 38px;
+}
+.curatorInfo .list .name:after {
+	content: "";
+	display: inline-block;
+	width: 22px; height: 22px;
+	margin: 0 0 0 10px;
+	background: url(/resource/images/icon_pen.png) no-repeat;
+	vertical-align: middle;
+}
+.curatorInfo .list .sub {
+	display: block;
+	margin: 10px 0 0;
+	color: #fff;
+	font-size: 27px;
+}
+.newsSubscribe {
+	margin: 150px 0;
+	text-align: center;
+}
+.newsSubscribe .tit {
+	margin-right: 45px;
+	color: #563993;
+	font-size: 38px;
+	font-weight: bold;
+}
+.newsSubscribe .tit img {vertical-align: middle;}
+.newsSubscribe .emailInput {
+	display: inline-block;
+	border: 3px solid #563993;
+	border-radius: 5px;
+}
+.newsSubscribe .emailInput input[type="text"] {
+	width: 680px;
+	padding: 5px 50px;
+	background: none;
+	border:0;
+	font-size: 38px;
+	letter-spacing: -3px;
+}
+.newsSubscribe .emailInput button {
+	height: 86px;
+	padding: 0 26px;
+	font-size: 38px;
+	background: #563993;
+	color: #fff;
+}
+.newsSubscribe .emailInput button:after {
+	content: "";
+	display: inline-block;
+	margin-left: 10px;
+	width: 28px; height: 21px;
+	background: url(/resource/images/btn_subscribe.png) no-repeat;
+	vertical-align: 2px;
+}
+
+.categoryList .list {
+	width: 1340px;
+	margin: 80px auto 0;
+	overflow: hidden;
+}
+.categoryList .list li {
+	float: left;
+	width: 20%;
+}
+.categoryList .list a {
+	display: block;
+	height: 144px;
+	margin: 5px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	font-size: 19px;
+	font-weight: bold;
+}
+.categoryList .list a:hover {
+	background: #563993;
+}
+.categoryList .list a span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.categoryList .list a:after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.profileWrap {
+	width: 770px;
+	margin: 245px auto 0;
+}
+.profileWrap .thumbnailWrap {
+	text-align: right;
+}
+.profileWrap .thumbnailWrap .img {
+	display: block;
+	width: 170px; height: 170px;
+	margin: 0 auto 15px;
+	background: #fff;
+	border-radius: 50%;
+	text-align: center;
+}
+.profileWrap .thumbnailWrap .img img {
+	width: 115px; height: 115px;
+	margin: 26px 0;
+}
+.profileWrap .nickWrap {
+	margin: 45px 0 0;
+	padding: 45px 0 0;
+	border-top: 1px solid #563993;
+}
+.profileWrap .nickWrap input[type="text"] {
+	float: left;
+	width: 600px;
+	font-size: 28px;
+	background: none;
+	border: 0;
+	font-weight: bold;
+}
+.profileWrap .nickWrap .btnType3 {
+	min-width: 110px;
+	float: right;
+}
+
+.myWrapList li {
+	position: relative;
+	min-height: 158px;
+	padding: 35px 0 35px 190px;
+}
+.myWrapList .img {
+	position: absolute;
+	left: 0;
+	width: 105px;
+	height: 158px;
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0, .15); 
+}
+.myWrapList .img img {
+	width: 100%;
+	height: 100%;
+}
+.myWrapList .tit {
+	display: block;
+	margin: 0 0 10px;
+	font-size: 26px;
+}
+.myWrapList .txt {
+	font-size: 24px;
+}
+.myWrapList .btnScrap {
+	position: absolute;
+	top: 35px; right: 0;
+	width: 31px; height: 31px;
+	background: url(/resource/images/icon_scrap2.png) no-repeat;
+	font: 0/0 a;
+}
+.myWrapList li ~ li {
+	border-top: 1px solid #9597A6;
+}
