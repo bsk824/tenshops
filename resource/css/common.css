@@ -36,7 +36,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	line-height: 1;
 }
 /* layout */
-#wrap {padding: 88px 0 150px;}
+#wrap {padding: 88px 0 0;}
 #header {
 	position: fixed;
 	top: 0; right: 0; left: 0;
@@ -287,6 +287,40 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	border-radius: 12px;
 	font-size: 12px;
 }
+
+#footer {
+	height: 220px;
+	margin: 200px 0 0;
+	background: #563993;
+	color: #fff;
+}
+#footer .copy {
+	float: left;
+	width: 320px;
+	padding: 145px 0 0 80px;
+	background: url(/resource/images/img_logo3.png) no-repeat 68px 80px;
+	font-size: 12px;
+}
+#footer .link {
+	float: left;
+	padding-top: 75px;
+}
+#footer .link span {
+	display: block;
+	margin: 0 0 5px;
+}
+#footer .link a {
+	font-size: 20px;
+	color: #fff;
+}
+#footer .info {
+	float: right;
+	margin: 70px 80px 0 0;
+	font-size: 15px;
+}
+#footer .info p {
+	margin-top: 5px;
+}
 /* //layout */
 
 .section {
@@ -299,3 +333,24 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	clear: both;
 }
 
+.lineTit {
+	font-size: 36px;
+	text-align: center;
+	font-weight: bold;
+}
+.lineTit span {
+	position: relative;
+	display: inline-block;
+}
+.lineTit span:before,
+.lineTit span:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: 95px;
+	height: 3px;
+	margin-top: -1.5px;
+	background: #000;
+}
+.lineTit span:before {left: -100px}
+.lineTit span:after {right: -100px}
