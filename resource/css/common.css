@@ -50,14 +50,14 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	position: absolute;
 	top: 33px; left: 125px; 
 	width: 167px; height: 22px;
-	background: url(/resource/images/img_logo.png) no-repeat;
+	background: url(../images/img_logo.png) no-repeat;
 	font: 0/0 a;
 }
 #header .btnMenu {
 	position: absolute;
 	top: 33px; left: 69px;
 	width: 25px; height: 23px;
-	background: url(/resource/images/btn_menu.png) no-repeat;
+	background: url(../images/btn_menu.png) no-repeat;
 	font: 0/0 a;
 }
 #header .nav {
@@ -72,10 +72,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	font: 0/0 a;
 }
 #header .btnOrder {
-	background: url(/resource/images/icon_order.png) no-repeat;
+	background: url(../images/icon_order.png) no-repeat;
 }
 #header .btnSearch {
-	background: url(/resource/images/icon_search.png) no-repeat;
+	background: url(../images/icon_search.png) no-repeat;
 }
 
 .menuOn:after {
@@ -99,7 +99,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 }
 .userWrap .userTop {
 	height: 415px;
-	background: #000 url(/resource/images/img_logo2.png) no-repeat 50% 54px;
+	background: #000 url(../images/img_logo2.png) no-repeat 50% 54px;
 	border-top: 1px solid #000;
 	box-shadow: 0 3px 3px 0 rgba(0,0,0,.3);
 	color: #fff;
@@ -118,7 +118,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	position: absolute;
 	top: 24px; right: 32px;
 	width: 16px; height: 16px;
-	background: url(/resource/images/icon_alert.png) no-repeat;
+	background: url(../images/icon_alert.png) no-repeat;
 	font: 0/0 a;
 }
 .userWrap .userPic {
@@ -156,10 +156,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	margin-left: 110px;
 }
 .userWrap .myLink .linkScrap {
-	background: url(/resource/images/icon_scrap.png) no-repeat 0 50%;
+	background: url(../images/icon_scrap.png) no-repeat 0 50%;
 }
 .userWrap .myLink .linkReview {
-	background: url(/resource/images/icon_review.png) no-repeat 0 50%;
+	background: url(../images/icon_review.png) no-repeat 0 50%;
 }
 .userWrap .userCont {
 	position: absolute;
@@ -240,7 +240,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	display: inline-block;
 	width: 16px; height: 15px;
 	margin: 0 15px 0 0;
-	background: url(/resource/images/icon_heart.png) no-repeat;
+	background: url(../images/icon_heart.png) no-repeat;
 	vertical-align: middle;
 }
 .userWrap .userBtm .login {
@@ -262,12 +262,12 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 .userWrap .userBtm .login .linkSet {left: 25px;}
 .userWrap .userBtm .login .linkSet:before {
 	width: 17px; height: 16px;
-	background: url(/resource/images/icon_set.png) no-repeat;
+	background: url(../images/icon_set.png) no-repeat;
 }
 .userWrap .userBtm .login .linkOut {right: 25px;}
 .userWrap .userBtm .login .linkOut:before {
 	width: 14px; height: 16px;
-	background: url(/resource/images/icon_logout.png) no-repeat;
+	background: url(../images/icon_logout.png) no-repeat;
 }
 .userWrap .userBtm .logout {
 	padding: 25px 0 25px 25px;
@@ -296,7 +296,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	float: left;
 	width: 320px;
 	padding: 145px 0 0 80px;
-	background: url(/resource/images/img_logo3.png) no-repeat 68px 80px;
+	background: url(../images/img_logo3.png) no-repeat 68px 80px;
 	font-size: 12px;
 }
 #footer .link {
@@ -324,7 +324,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	position: fixed;
 	top: 50%; right: 150px;
 	width: 48px; height: 48px;
-	background: url(/resource/images/btn_top.png) no-repeat;
+	background: url(../images/btn_top.png) no-repeat;
 	font: 0/0 a;
 }
 .scroll .btnTop {
@@ -457,14 +457,14 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 }
 .tabMenu2 .active a {color: #563993;}
 .tabMenu2 .tabReview:after {
-	background: url(/resource/images/tab_review.png) no-repeat;
+	background: url(../images/tab_review.png) no-repeat;
 }
 .tabMenu2 .active .tabReview:after {
-	background: url(/resource/images/tab_review_on.png) no-repeat;
+	background: url(../images/tab_review_on.png) no-repeat;
 }
 .tabMenu2 .tabReply:after {
-	background: url(/resource/images/tab_reply.png) no-repeat;
+	background: url(../images/tab_reply.png) no-repeat;
 }
 .tabMenu2 .active .tabReply:after {
-	background: url(/resource/images/tab_reply_on.png) no-repeat;
+	background: url(../images/tab_reply_on.png) no-repeat;
 }

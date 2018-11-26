@@ -61,7 +61,7 @@
 	display: inline-block;
 	width: 14px; height: 14px;
 	margin: 0 0 0 15px;
-	background: url(/resource/images/icon_pen.png) no-repeat;
+	background: url(../images/icon_pen.png) no-repeat;
 	background-size: cover;
 	vertical-align: middle;
 }
@@ -113,7 +113,7 @@
 	display: inline-block;
 	width: 22px; height: 22px;
 	margin: 0 0 0 15px;
-	background: url(/resource/images/icon_pen.png) no-repeat;
+	background: url(../images/icon_pen.png) no-repeat;
 	vertical-align: middle;
 }
 .bookImgs .txt {
@@ -181,7 +181,7 @@
 	display: inline-block;
 	width: 14px; height: 14px;
 	margin: 0 0 0 10px;
-	background: url(/resource/images/icon_pen.png) no-repeat;
+	background: url(../images/icon_pen.png) no-repeat;
 	background-size: cover;
 	vertical-align: middle;
 }
@@ -253,11 +253,11 @@
 }
 .eventWrap .slideNav .slidePrev {
 	left: 70px;
-	background: url(/resource/images/btn_prev.png) no-repeat;
+	background: url(../images/btn_prev.png) no-repeat;
 }
 .eventWrap .slideNav .slideNext {
 	right: 70px;
-	background: url(/resource/images/btn_next.png) no-repeat;
+	background: url(../images/btn_next.png) no-repeat;
 }
 .eventWrap .slideNav [class*="disabled"] {
 	display: none;
@@ -306,7 +306,7 @@
 	display: inline-block;
 	width: 22px; height: 22px;
 	margin: 0 0 0 10px;
-	background: url(/resource/images/icon_pen.png) no-repeat;
+	background: url(../images/icon_pen.png) no-repeat;
 	vertical-align: middle;
 }
 .curatorInfo .list .sub {
@@ -351,7 +351,7 @@
 	display: inline-block;
 	margin-left: 10px;
 	width: 28px; height: 21px;
-	background: url(/resource/images/btn_subscribe.png) no-repeat;
+	background: url(../images/btn_subscribe.png) no-repeat;
 	vertical-align: 2px;
 }
 
@@ -453,7 +453,7 @@
 	position: absolute;
 	top: 35px; right: 0;
 	width: 31px; height: 31px;
-	background: url(/resource/images/icon_scrap2.png) no-repeat;
+	background: url(../images/icon_scrap2.png) no-repeat;
 	font: 0/0 a;
 }
 .myWrapList li ~ li {
